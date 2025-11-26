@@ -5,72 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danner Informatik</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="dark-mode">
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <img src="img/rocket_hero.jpg" alt="Steampunk Rakete" class="hero-bg">
-        <div class="hero-content fade-in">
-            <h1>Danner Informatik</h1>
-            <p>Professionell. Einfach. Solide.</p>
-            <a href="mailto:kontakt@danner-informatik.ch" class="btn">Kontaktiere mich</a>
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="logo">Danner Informatik</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Leistungen</a></li>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="page2.html">Projekte</a></li>
+    </ul>
+
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</nav>
+
+<!-- HERO SECTION -->
+<header id="hero" class="hero">
+    <img src="img/rocket_hero.jpg" alt="Steampunk Rakete" class="hero-bg">
+    <div class="hero-content fade-in">
+        <h1 class="glow-text">Danner Informatik</h1>
+        <p>Professionell. Einfach. Solide.</p>
+        <a href="mailto:kontakt@danner-informatik.ch" class="btn">Kontaktiere mich</a>
+    </div>
+</header>
+
+<!-- SERVICES -->
+<section id="services" class="services fade-slide-in">
+    <h2 class="centered-title">Leistungen</h2>
+    <div class="service-grid">
+
+        <div class="service-card tilt">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Webpages</h3>
+            <p>Responsive Webdesign, Webshops, Landingpages, Domainverwaltung, Hosting.</p>
         </div>
-    </header>
 
-    <!-- SERVICES SECTION -->
-    <section class="services fade-in">
-        <h2>Leistungen</h2>
-        <div class="service-grid">
-
-            <div class="service-card">
-                <img src="img/service_web.png" alt="Webdesign">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>Webpages</h3>
-                <p>Responsive Webdesign, Webshops, Landingpages, Domainverwaltung, Hosting.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="img/service_code.png" alt="Coding">
-                <i class="fa-solid fa-code"></i>
-                <h3>Coding</h3>
-                <p>Java, C/C++, Python.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="img/service_support.png" alt="IT Support">
-                <i class="fa-solid fa-server"></i>
-                <h3>IT-Support</h3>
-                <p>Windows Server, Netzwerk, Firewall, VPN, Linux Administration.</p>
-            </div>
-
+        <div class="service-card tilt">
+            <i class="fa-solid fa-code"></i>
+            <h3>Coding</h3>
+            <p>Java, C/C++, Python.</p>
         </div>
-    </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about fade-in">
-        <h2>Über mich</h2>
-        <p>
-            Mein Name ist <strong>Sandro Danner</strong>, Gründer von <strong>Danner Informatik</strong> aus der Schweiz.
-            Seit vielen Jahren unterstütze ich Unternehmen dabei, ihre IT-Infrastruktur sicher, modern und effizient aufzubauen.
-            Zu meinen Stärken gehören kundenorientierte Arbeitsweise, zuverlässige Projektabwicklung sowie ein tiefes technisches
-            Verständnis in den Bereichen Webentwicklung, Softwareprogrammierung und IT-Support.  
-            <br><br>
-            Ob individuelle Webseiten, komplexe Softwarelösungen oder komplette IT-Betreuung – ich stehe als persönlicher und
-            engagierter Ansprechpartner an Ihrer Seite.
-        </p>
-    </section>
+        <div class="service-card tilt">
+            <i class="fa-solid fa-server"></i>
+            <h3>IT-Support</h3>
+            <p>Windows Server, Netzwerk, Firewall, VPN, Linux Administration.</p>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Danner Informatik — Schweiz</p>
-        <p>&copy; 2025 Danner Informatik</p>
-        <p>Kontakt: kontakt@danner-informatik.ch</p>
-    </footer>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- ABOUT -->
+<section id="about" class="about fade-slide-in">
+    <h2>Über mich</h2>
+    <p>
+        Ich bin <strong>Sandro Danner</strong>, Gründer von <strong>Danner Informatik</strong> aus der Schweiz.
+        Als leidenschaftlicher IT-Spezialist unterstütze ich Unternehmen mit modernen, sicheren und effizienten
+        Lösungen in den Bereichen Webentwicklung, Softwareentwicklung und IT-Infrastruktur.
+        <br><br>
+        Mein Anspruch ist es, technologische Exzellenz mit einem klaren Fokus auf Kundennähe zu verbinden.
+        Dabei setze ich auf transparente Kommunikation, hochwertige Umsetzung und nachhaltige Lösungen,
+        die Unternehmen langfristig stärken.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Danner Informatik — Schweiz</p>
+    <p>&copy; 2025 Danner Informatik</p>
+    <p>Kontakt: kontakt@danner-informatik.ch</p>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
