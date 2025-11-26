@@ -1,35 +1,133 @@
-/* ========== GLOBAL ========== */
+/* ===================================================================
+   GLOBAL THEME COLORS
+   =================================================================== */
+
+:root {
+    --bg-dark: #1c1c1e;
+    --bg-light: #f3f3f3;
+    --text-dark: #d0d0d0;
+    --text-light: #222;
+    --primary: #00e5ff;
+    --card-dark: #262629;
+    --card-light: #ffffff;
+    --glow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+/* Light Mode */
+.light-mode {
+    --bg-current: var(--bg-light);
+    --card-current: var(--card-light);
+    --text-current: var(--text-light);
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg-current: var(--bg-dark);
+    --card-current: var(--card-dark);
+    --text-current: var(--text-dark);
+}
+
+/* ===================================================================
+   BASIC GLOBAL STYLES
+   =================================================================== */
 
 body {
     margin: 0;
+    background: var(--bg-current);
+    color: var(--text-current);
     font-family: Arial, sans-serif;
-    background-color: #1c1c1e; /* Anthrazit */
-    color: #d0d0d0; /* Silber */
+    transition: background 0.4s, color 0.4s;
 }
 
 h1, h2, h3 {
-    color: #00e5ff; /* Neon Cyan */
+    color: var(--primary);
 }
 
 a {
-    color: #00e5ff;
+    color: var(--primary);
     text-decoration: none;
 }
 
 section {
-    padding: 60px 10%;
+    padding: 70px 10%;
 }
 
-/* ========== HERO SECTION ========== */
+.centered-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ===================================================================
+   NAVIGATION BAR
+   =================================================================== */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.35);
+    padding: 12px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: var(--glow);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-shadow: var(--glow);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--primary);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    color: #1c1c1e;
+}
+
+/* ===================================================================
+   HERO SECTION
+   =================================================================== */
 
 .hero {
     position: relative;
-    height: 80vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
+    margin-top: 60px;
 }
 
 .hero-bg {
@@ -42,109 +140,119 @@ section {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 5;
+}
+
+.glow-text {
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
 }
 
 .btn {
-    background-color: #00e5ff;
+    background-color: var(--primary);
     color: #1c1c1e;
     padding: 12px 30px;
     border-radius: 8px;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #d0d0d0;
-    color: #1c1c1e;
+    background-color: var(--text-current);
+    color: var(--bg-current);
 }
 
-/* ========== SERVICES ========== */
+/* ===================================================================
+   SERVICES
+   =================================================================== */
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 40px;
 }
 
 .service-card {
-    background: #262629;
-    padding: 25px;
-    border-radius: 12px;
+    background: var(--card-current);
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+    box-shadow: var(--glow);
     transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
 }
 
 .service-card i {
-    font-size: 40px;
-    margin: 10px 0;
-    color: #00e5ff;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: var(--primary);
 }
 
-/* ========== ABOUT ========== */
-
-.about p {
-    line-height: 1.7;
-    font-size: 1.1rem;
-}
-
-/* ========== PROJECTS (page2) ========== */
-
-.subpage-header {
-    background: #111;
-    padding: 40px;
-    text-align: center;
-}
+/* ===================================================================
+   PROJECTS (PAGE 2)
+   =================================================================== */
 
 .project-grid {
     display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
 }
 
 .project-card {
-    background: #262629;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
-    transition: 0.3s;
+    background: var(--card-current);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: var(--glow);
 }
 
 .project-card:hover {
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.7);
 }
 
-.project-link {
-    margin-top: 10px;
-    display: inline-block;
-}
-
-/* ========== FOOTER ========== */
+/* ===================================================================
+   FOOTER
+   =================================================================== */
 
 footer {
-    padding: 20px;
-    text-align: center;
     background: #111;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: var(--text-dark);
 }
 
-/* ========== ANIMATIONS ========== */
+/* ===================================================================
+   ANIMATIONS
+   =================================================================== */
 
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.2s ease forwards;
+    animation: fadeIn 1.3s forwards;
 }
 
 @keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.fade-slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1.2s forwards;
+}
+
+@keyframes fadeSlideIn {
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Tilt Effect */
+.tilt {
+    transition: transform 0.15s ease-out;
+}
+
+.tilt:hover {
+    transform: perspective(600px) rotateX(6deg) rotateY(6deg);
 }
