@@ -5,87 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danner Informatik – Projekte</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
 
-<header class="subpage-header">
-    <h1>Meine Projekte</h1>
+<body class="dark-mode">
+
+<nav class="navbar">
+    <div class="logo">Danner Informatik</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#web">Webseiten</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#other">Sonstiges</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</nav>
+
+<header class="subpage-header fade-in">
+    <h1 class="glow-text">Meine Projekte</h1>
 </header>
 
-<section class="projects-section">
-
+<section id="web" class="projects-section fade-slide-in">
     <h2>Webseiten, die ich erstellt habe</h2>
     <div class="project-grid">
 
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>Business Landingpage</h3>
-            <p>Modernes Webdesign für ein KMU, inklusive Hosting und Wartung.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Komplett entwickelte KMU-Webseite mit Hosting + Support.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>Webshop System</h3>
-            <p>Individuell entwickelter Webshop mit Produktverwaltung und Zahlungssystemen.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Individueller Shop mit Zahlungsintegration und Produktverwaltung.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>Portfolio Website</h3>
-            <p>Persönliche Portfolio Seite mit responsiven Komponenten.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Moderne, responsive Portfolio Plattform.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
     </div>
+</section>
 
+<section id="tools" class="projects-section fade-slide-in">
     <h2>Software / Tools</h2>
-    <div class="project-grid">
 
-        <div class="project-card">
+    <div class="project-grid">
+        <div class="project-card tilt">
             <h3>Monitoring Tool</h3>
-            <p>System zur Überwachung von Servern und Netzwerkstatus.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Server- und Netzwerkmonitoring in Echtzeit.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
-            <h3>Backup Automation Tool</h3>
-            <p>Automatisiertes Skript zur Sicherung von wichtigen Dateien.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+        <div class="project-card tilt">
+            <h3>Backup Automation</h3>
+            <p>Automatische Backup Pipelines für Linux & Windows.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
-            <h3>Python Datenparser</h3>
-            <p>Tool zur Bereinigung und Analyse von Datensätzen.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+        <div class="project-card tilt">
+            <h3>Datenparser</h3>
+            <p>Python Tool zur Datenbereinigung und Analyse.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
-
     </div>
+</section>
 
+<section id="other" class="projects-section fade-slide-in">
     <h2>Sonstige Projekte</h2>
+
     <div class="project-grid">
-
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>Netzwerkoptimierung</h3>
-            <p>Verbesserung bestehender Netzwerkinfrastrukturen in KMUs.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Optimierung von Bestandsnetzwerken in KMUs.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>Firewall Einrichtung</h3>
-            <p>Einrichtung und Konfiguration einer sicheren Firewall-Umgebung.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Einrichtung sicherer Firewall-Strukturen.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt">
             <h3>VPN Rollout</h3>
-            <p>Einrichtung eines sicheren Remote-Zugangs für Mitarbeiter.</p>
-            <a href="#" class="project-link">Zum Projekt</a>
+            <p>Sicherer Fernzugriff für Mitarbeiter.</p>
+            <a href="#" class="project-link">Details ansehen</a>
         </div>
-
     </div>
-
 </section>
 
 <footer>
@@ -93,5 +106,6 @@
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
