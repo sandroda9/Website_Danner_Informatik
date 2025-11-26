@@ -3,48 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startseite</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>Danner Informatik</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Website</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Startseite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page2.html">Seite 2</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Willkommen!</h1>
-                <p>Dies ist die Startseite der Website.</p>
-            </div>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <img src="img/rocket_hero.jpg" alt="Steampunk Rakete" class="hero-bg">
+        <div class="hero-content fade-in">
+            <h1>Danner Informatik</h1>
+            <p>Professionell. Einfach. Solide.</p>
+            <a href="mailto:kontakt@danner-informatik.ch" class="btn">Kontaktiere mich</a>
         </div>
-    </main>
+    </header>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Website. Alle Rechte vorbehalten.</p>
+    <!-- SERVICES SECTION -->
+    <section class="services fade-in">
+        <h2>Leistungen</h2>
+        <div class="service-grid">
+
+            <div class="service-card">
+                <img src="img/service_web.png" alt="Webdesign">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Webpages</h3>
+                <p>Responsive Webdesign, Webshops, Landingpages, Domainverwaltung, Hosting.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="img/service_code.png" alt="Coding">
+                <i class="fa-solid fa-code"></i>
+                <h3>Coding</h3>
+                <p>Java, C/C++, Python.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="img/service_support.png" alt="IT Support">
+                <i class="fa-solid fa-server"></i>
+                <h3>IT-Support</h3>
+                <p>Windows Server, Netzwerk, Firewall, VPN, Linux Administration.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about fade-in">
+        <h2>Über mich</h2>
+        <p>
+            Mein Name ist <strong>Sandro Danner</strong>, Gründer von <strong>Danner Informatik</strong> aus der Schweiz.
+            Seit vielen Jahren unterstütze ich Unternehmen dabei, ihre IT-Infrastruktur sicher, modern und effizient aufzubauen.
+            Zu meinen Stärken gehören kundenorientierte Arbeitsweise, zuverlässige Projektabwicklung sowie ein tiefes technisches
+            Verständnis in den Bereichen Webentwicklung, Softwareprogrammierung und IT-Support.  
+            <br><br>
+            Ob individuelle Webseiten, komplexe Softwarelösungen oder komplette IT-Betreuung – ich stehe als persönlicher und
+            engagierter Ansprechpartner an Ihrer Seite.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Danner Informatik — Schweiz</p>
+        <p>&copy; 2025 Danner Informatik</p>
+        <p>Kontakt: kontakt@danner-informatik.ch</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
