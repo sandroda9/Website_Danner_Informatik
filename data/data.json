@@ -1,0 +1,16 @@
+{
+  "website": {
+    "title": "Meine Website",
+    "description": "Eine 2-seitige Website mit Bootstrap",
+    "items": [
+      {
+        "id": 1,
+        "name": "Element 1"
+      },
+      {
+        "id": 2,
+        "name": "Element 2"
+      }
+    ]
+  }
+}
